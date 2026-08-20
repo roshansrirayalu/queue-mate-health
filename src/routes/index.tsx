@@ -49,7 +49,7 @@ function Index() {
   }
 
   function handleServe() {
-    if (q.isEmpty()) {
+    if (q.isEmpty) {
       toast.error("Queue is empty. No patient to serve.");
       return;
     }
