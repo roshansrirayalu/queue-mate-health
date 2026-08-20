@@ -42,7 +42,7 @@ export class PatientQueue {
   /** PEEK / FRONT — look at the front patient without removing them. O(1) */
   peek(): Patient | null {
     if (this.isEmpty()) return null;
-    return this.items[0];
+    return this.items[0] ?? null;
   }
 
   /** ISEMPTY — is the queue empty? O(1) */
