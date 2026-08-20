@@ -10,11 +10,6 @@ import { QueueVisualization } from "@/components/queue/QueueVisualization";
 import { QueueOperations } from "@/components/queue/QueueOperations";
 import { ServedHistory } from "@/components/queue/ServedHistory";
 import { PatientSearch } from "@/components/queue/PatientSearch";
-import {
-  HowQueueWorks,
-  CppImplementation,
-  ComplexityTable,
-} from "@/components/queue/LearnSections";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -123,9 +118,6 @@ function Index() {
 
         <PatientSearch waiting={q.waiting} served={q.served} />
         <ServedHistory served={q.served} />
-        <HowQueueWorks />
-        <CppImplementation />
-        <ComplexityTable />
       </main>
 
       <footer className="border-t border-border bg-card">
